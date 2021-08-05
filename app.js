@@ -10,7 +10,7 @@ const navButtons = document.querySelector(".nav-buttons")
 const pullDownBtn = document.querySelector(".pull-down")
 const chevron = document.querySelector(".fa-chevron-down")
 
-const apiKey = API_KEY;
+const apiKey = YOUR_API_KEY_HERE;
 
 pullDownBtn.addEventListener("click", pullDownNav) 
 let chev = false

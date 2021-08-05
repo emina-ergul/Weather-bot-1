@@ -10,7 +10,7 @@
     
     body {
         height: 100vh;
-        background-image: url("/imgs/gale-crater.jpg");
+        background-image: url("imgs/gale-crater.jpg");
         background-size: cover;
     }
 
