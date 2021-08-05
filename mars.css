@@ -1,0 +1,215 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 400;
+    color: rgb(255, 255, 255);
+    overflow: hidden;
+    }
+    
+    body {
+        height: 100vh;
+        background-image: url("/imgs/gale-crater.jpg");
+        background-size: cover;
+    }
+
+    img {
+        position: fixed;
+        z-index: -1;
+    }
+
+    .title-container {
+        background: rgba(0, 0, 0, 0.288);
+        position: absolute;
+        top: 20px;
+        left: 50%;
+        transform: translate(-50%);
+        font-size: 20px;
+        padding: 7px;
+        border-radius: 7px;
+        backdrop-filter: blur(3px);
+    }
+    span {
+        margin-left: 10px;
+        font-size: 45px;
+        font-family: 'Rajdhani', sans-serif;
+    }
+    .panel{
+        position: relative;
+        top: 57%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        background: rgba(0, 0, 0, 0.233);
+        height: 70%;
+        width: 70%;
+        border-radius: 7px;
+        backdrop-filter: blur(5px);
+    }
+
+    .data-desc {
+        margin: 30px 0 0 40px;
+        font-size: 22px;
+        position: absolute;
+        width: 38%;
+    }
+    .data-desc p {
+        font-size: 18px;
+    }
+
+    .units-btn {
+        border-radius: 5px;
+        border: none;
+        padding: 5px;
+        position: absolute;
+        right: 20px;
+        top: 20px;
+        background: rgba(0, 0, 0, 0.192);
+        color: #fff;
+        transition: 0.2s;
+        z-index: 1;
+        cursor: pointer;
+    }
+    .units-btn:hover {
+        background: rgba(0, 0, 0, 0.301);
+    }
+
+    .current-sol {
+        background: rgba(0, 0, 0, 0.37);
+        font-size: 16px;
+        margin: 20px 0 0 0;
+        padding: 12px;
+        border-radius: 7px;
+        position: absolute;
+        right: 11%;
+    }
+
+hr {
+    position: absolute;
+    top: 55%;
+    border: 0;
+    height: 2px;
+    width: 100%;
+    background: linear-gradient(to right, rgba(11, 47, 209, 0), rgb(0, 0, 0), rgba(44, 47, 206, 0));
+    
+}
+
+.sols-container {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translate(-50%);
+    width: 90%;
+    height: 38%;
+    display: flex;
+    justify-content: space-between;
+}
+.sol {
+    background: rgba(0, 0, 0, 0.541);
+    width: 22%;
+    border-radius: 7px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.see-earth {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    padding: 7px;
+    font-size: 16px;
+    border-radius: 7px;
+    border: none;
+    background: rgba(34, 34, 34, 0.356);
+    backdrop-filter: blur(3px);
+    cursor: pointer;
+}
+.see-earth:hover {
+    transition: 0.2s;
+    background: rgb(66, 66, 66);
+}
+
+.made-by {
+    font-size: 12px;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%);
+}
+
+@media screen and (max-width: 1100px) {
+.current-sol {
+    font-size: 14px;
+}
+.data-desc {
+    font-size: 16px;
+}
+}
+
+@media screen and (max-width: 950px) {
+    .panel {
+        width: 85%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .title, .title span {
+        font-size: 33px;
+        text-align: center;
+    }
+    .current-sol {
+        font-size: 12px;
+        right: 3%;
+        height: 50%;
+        width: 44%;
+    }
+    .data-desc {
+        font-size: 15px;
+    }
+    .data-desc p {
+        font-size: 14px;
+    }
+    hr {
+        top: 62%;
+    }
+    .sols-container {
+        align-items: flex-end;
+    }
+    .sol {
+        height: 80%;
+        font-size: 13px;
+    }
+    .see-earth {
+        width: 80px;
+    }
+}
+
+@media screen and (max-width: 468px) {
+    .panel {
+        top: 64%;
+        width: 97%;
+    }
+    .title-container {
+        top: 12%;
+        width: 70%;
+    }
+.title, .title span {
+    font-size: 30px;
+}
+.data-desc p {
+    font-size: 12px;
+}
+.current-sol {
+    font-size: 10px;
+}
+.sol {
+    font-size: 10px;
+    width: 22%;
+}
+.see-earth {
+    top: 0;
+    right: 0;
+}
+}

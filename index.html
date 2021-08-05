@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather-bot</title>
+</head>
+<body>
+    <div class="bg-container">
+        <div class="pull-down">
+            <i class="fas fa-chevron-down"></i>
+        </div>
+    <div class="title-container">
+        <h1 class="title">Weather-bot</h1>
+        <div class="search-container">
+            <form id="form">
+            <label for="search">Search city for current weather</label>
+            <div class="search-bar">
+                <input type="search" name="search" id="search" placeholder="City name">
+                <button type="submit" class="search-btn" aria-label="search city button"><i class="fas fa-search" alt="search"></i></button>
+            </div>
+            </form>
+        </div>
+    </div>
+    
+    <div class="invalid-search">Please enter a valid city.</div>
+<div class="panel">
+        <button class="units-btn">°C / °F</button>
+        
+<div class="upper-panel">
+    <!-- in weather.js -->
+    <div class="geolocation"></div>
+</div>
+
+<div class="lower-panel">
+    <!-- in weather.js -->
+</div>
+<hr>
+</div>
+
+<div class="buttons">
+    <a href="mars.html"class="see-mars"><button class="see-mars">🚀 Go to Mars</button></a>
+    <button class="location-btn">📍 Your location</button>
+</div>
+
+<div class="nav-buttons">
+    <a href="mars.html"class="see-mars"><button class="see-mars">🚀 Go to Mars</button></a>
+    <button class="location-btn">📍 Your location</button>
+</div>
+
+<div class="made-by"><p>Made by Mina</p></div>
+
+</div>
+<script src="config.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
